@@ -25,7 +25,7 @@ const headersData = [
   {
     label: "Games",
     href: "/games",
-  }
+  },
 ];
 
 const useStyles = makeStyles()(() => ({
@@ -89,7 +89,7 @@ export default function Header({ login, account, balance }) {
     if (account === "") {
       return (
         <Button variant="contained" color="error" onClick={login}>
-          Conect
+          Connect
         </Button>
       );
     } else {
@@ -109,7 +109,7 @@ export default function Header({ login, account, balance }) {
     const handleDrawerClose = () =>
       setState((prevState) => ({ ...prevState, drawerOpen: false }));
     return (
-<Toolbar>
+      <Toolbar>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container columns={6}>
             <Grid item xs={1}>
@@ -153,7 +153,7 @@ export default function Header({ login, account, balance }) {
             </Grid>
             <Grid item xs={4}>
               <Grid container alignItems="center" justifyContent="center">
-                {femmecubatorLogo('30%')}
+                {femmecubatorLogo("30%")}
               </Grid>
             </Grid>
             <Grid item xs={1}>
@@ -217,7 +217,7 @@ export default function Header({ login, account, balance }) {
             </Grid>
             <Grid item xs={4}>
               <Grid container alignItems="center" justifyContent="center">
-                {femmecubatorLogo('70%')}
+                {femmecubatorLogo("70%")}
               </Grid>
             </Grid>
             <Grid item xs={1}>
@@ -256,7 +256,7 @@ export default function Header({ login, account, balance }) {
         border: 5,
         borderColor: "#222c31",
         borderRadius: "10px",
-        width:{width},
+        width: { width },
       }}
       component="div"
     >
